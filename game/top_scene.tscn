@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://lmxej5hfeg1s" path="res://background.tscn" id="1_qwmda"]
 [ext_resource type="PackedScene" uid="uid://dsjtoxlg55msy" path="res://collectible.tscn" id="2_d5tke"]
 [ext_resource type="PackedScene" uid="uid://b2yhqrfdc1g5o" path="res://gate.tscn" id="4_2ncn1"]
+[ext_resource type="PackedScene" uid="uid://dvtuun2mto3x" path="res://hud.tscn" id="5_1likb"]
 
 [node name="Node2D" type="Node2D" unique_id=873385274]
 position = Vector2(0, -19)
@@ -17,6 +18,7 @@ scale = Vector2(0.25, 0.25)
 
 [node name="Collectible" parent="." unique_id=1392173866 instance=ExtResource("2_d5tke")]
 position = Vector2(99, 199)
+scale = Vector2(0.5, 0.5)
 
 [node name="Gate" parent="." unique_id=1697082703 instance=ExtResource("4_2ncn1")]
 position = Vector2(357, 333)
@@ -26,11 +28,15 @@ scale = Vector2(4, 4)
 position = Vector2(-64, -64)
 rotation = 1.5707964
 scale = Vector2(4, 4)
+opens_for = "Foundry"
 
 [node name="Gate3" parent="." unique_id=1059085131 instance=ExtResource("4_2ncn1")]
 position = Vector2(741, -208)
 rotation = 4.712389
 scale = Vector2(4, 4)
+opens_for = "Mountain"
 
 [node name="CenterSpawn" type="Marker2D" parent="." unique_id=1496327114 groups=["center_spawn"]]
 position = Vector2(305, -43)
+
+[node name="HUD" parent="." unique_id=1739908793 instance=ExtResource("5_1likb")]
