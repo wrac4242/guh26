@@ -55,7 +55,7 @@ while running:
             result = subprocess.run(f"mkdir -p ./mounting && timeout 10 mount /dev/{path} ./mounting", shell=True, capture_output=True, timeout=10)
             print(result)
             assert result.returncode == 0
-        except subprocess.TimeoutExpired as e:
+        except (subprocess.TimeoutExpired, AssertionError) as e:
             print("Timed out")
             last_valid_count = 0
             current_state = 0
