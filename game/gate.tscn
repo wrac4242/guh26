@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b2yhqrfdc1g5o"]
+
+[ext_resource type="Texture2D" uid="uid://c3o1wkd2idhhg" path="res://Assets/kenney_roguelike-rpg-pack/fences/gate_closed.png" id="1_15vrf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t1dns"]
+size = Vector2(16, 11)
+
+[node name="Gate" type="StaticBody2D" unique_id=1697082703]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=734243527]
+texture = ExtResource("1_15vrf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=61532233]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_t1dns")
