@@ -12,6 +12,7 @@ position = Vector2(-2, 55)
 
 [node name="Player" parent="." unique_id=1022311804 groups=["player"] instance=ExtResource("1_ojs25")]
 position = Vector2(-2, 55)
+scale = Vector2(0.25, 0.25)
 
 [node name="Collectible" parent="." unique_id=1392173866 instance=ExtResource("2_d5tke")]
 position = Vector2(99, 199)

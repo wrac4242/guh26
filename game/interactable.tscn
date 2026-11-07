@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://2qejoe0vpkjg"]
+
+[ext_resource type="Script" path="res://interactable.gd" id="1_wh154"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q627o"]
+radius = 79.30952
+
+[node name="Interactable" type="Area2D" unique_id=2120396843]
+script = ExtResource("1_wh154")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=68258424]
+shape = SubResource("CircleShape2D_q627o")
+
+[node name="PromptLabel" type="Label" parent="." unique_id=197788209]
+offset_left = 27.0
+offset_top = -72.0
+offset_right = 82.0
+offset_bottom = -49.0
+text = "Press E"
