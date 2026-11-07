@@ -51,6 +51,7 @@ while running:
             last_valid_count -= 1
             continue 
         # ok actually mount the filesystem and read it
+        go_on = True
         try:
             result = subprocess.run(f"mkdir -p ./mounting && timeout 10 mount /dev/{path} ./mounting", shell=True, capture_output=True, timeout=10)
             print(result)
@@ -60,26 +61,27 @@ while running:
             last_valid_count = 0
             current_state = 0
             write_to_file()
-            continue
-        try:
-            with open(listed_file) as f:
-                out = f.read().strip()
-                if out not in valid:
-                    print(out)
-                    print("not valid")
-                    break
-                cur = valid.index(out)
-                if cur != current_state:
-                    current_state = cur 
-                    write_to_file()
-                os.fsync(f.fileno())
-        except Exception as e:
-            print(e)
-            last_valid_count = 0
-            current_state = 0
-            write_to_file()
-            time.sleep(1)
-            continue
+            go_on = False
+        if go_on:
+            try:
+                with open(listed_file) as f:
+                    out = f.read().strip()
+                    if out not in valid:
+                        print(out)
+                        print("not valid")
+                        break
+                    cur = valid.index(out)
+                    if cur != current_state:
+                        current_state = cur 
+                        write_to_file()
+                    os.fsync(f.fileno())
+            except Exception as e:
+                print(e)
+                last_valid_count = 0
+                current_state = 0
+                write_to_file()
+                time.sleep(1)
+                continue
         success = False
         for i in range(0, 5):
             print("unmounting")
