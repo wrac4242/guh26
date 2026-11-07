@@ -11,7 +11,7 @@ func _ready() -> void:
 	WorldState.resources_changed.connect(update_resources)
 	DiskReader.island_changed.connect(update_floppy)
 	update_resources()
-	update_floppy("Not Present")
+	update_floppy(DiskReader.currentState)
 	pass # Replace with function body.
 
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwykp0ykv5wpf"
-path="res://.godot/imported/metal_fn.webp-65aa8819b3a559d47aee734f40d9c43d.ctex"
+path="res://.godot/imported/metal_fn.webp-3ba2bddc2c3d1f18120326a2c1598749.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/metal_fn.webp"
-dest_files=["res://.godot/imported/metal_fn.webp-65aa8819b3a559d47aee734f40d9c43d.ctex"]
+source_file="res://assets/metal_fn.webp"
+dest_files=["res://.godot/imported/metal_fn.webp-3ba2bddc2c3d1f18120326a2c1598749.ctex"]
 
 [params]
 

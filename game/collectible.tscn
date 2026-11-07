@@ -2,10 +2,11 @@
 
 [ext_resource type="Script" uid="uid://dx3btkwbqa7gx" path="res://scripts/collectible.gd" id="1_rd2yi"]
 [ext_resource type="Texture2D" uid="uid://be4883lri3aub" path="res://assets/planks_fn.webp" id="2_8orai"]
-[ext_resource type="Texture2D" uid="uid://bba5alvk1ojib" path="res://assets/brick_fn.webp" id="3_h1l3x"]
-[ext_resource type="Texture2D" uid="uid://dwykp0ykv5wpf" path="res://assets/metal_fn.webp" id="4_oc26g"]
+[ext_resource type="Texture2D" uid="uid://bba5alvk1ojib" path="res://Assets/brick_fn.webp" id="3_h1l3x"]
+[ext_resource type="Texture2D" uid="uid://dwykp0ykv5wpf" path="res://Assets/metal_fn.webp" id="4_oc26g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_reqx4"]
+radius = 32.0
 
 [node name="Collectible" type="Area2D" unique_id=1392173866]
 script = ExtResource("1_rd2yi")

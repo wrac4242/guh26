@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bba5alvk1ojib"
-path="res://.godot/imported/brick_fn.webp-88998e6e3a1d53b419a7c03774561364.ctex"
+path="res://.godot/imported/brick_fn.webp-aedb29f6a035eab3d0be8bc82a0c2a53.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/brick_fn.webp"
-dest_files=["res://.godot/imported/brick_fn.webp-88998e6e3a1d53b419a7c03774561364.ctex"]
+source_file="res://assets/brick_fn.webp"
+dest_files=["res://.godot/imported/brick_fn.webp-aedb29f6a035eab3d0be8bc82a0c2a53.ctex"]
 
 [params]
 
