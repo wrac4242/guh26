@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://boncxbjhfylr8" path="res://player.tscn" id="1_ojs25"]
 [ext_resource type="PackedScene" uid="uid://lmxej5hfeg1s" path="res://background.tscn" id="1_qwmda"]
-[ext_resource type="PackedScene" uid="uid://dsjtoxlg55msy" path="res://collectible.tscn" id="2_d5tke"]
+[ext_resource type="Script" uid="uid://c2gvpbicvfqxk" path="res://scripts/collectible_spawner.gd" id="2_spawner"]
 [ext_resource type="PackedScene" uid="uid://b2yhqrfdc1g5o" path="res://gate.tscn" id="4_2ncn1"]
 [ext_resource type="PackedScene" uid="uid://dvtuun2mto3x" path="res://hud.tscn" id="5_1likb"]
 
@@ -16,10 +16,9 @@ position = Vector2(-2, 55)
 position = Vector2(337, -120)
 scale = Vector2(0.25, 0.25)
 
-[node name="Collectible" parent="." unique_id=1392173866 instance=ExtResource("2_d5tke")]
-position = Vector2(1540, -364)
-position = Vector2(99, 199)
-scale = Vector2(0.5, 0.5)
+[node name="CollectibleSpawner" type="Node2D" parent="." node_paths=PackedStringArray("ground")]
+script = ExtResource("2_spawner")
+ground = NodePath("../Background/Ground")
 
 [node name="Gate" parent="." unique_id=1697082703 instance=ExtResource("4_2ncn1")]
 position = Vector2(357, 333)
