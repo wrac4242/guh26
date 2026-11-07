@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3 uid="uid://dcese5ekhmtro"]
+
+[ext_resource type="Script" uid="uid://cxq6bx53h1akw" path="res://resources/upgrade_data.gd" id="1_twem4"]
+
+[resource]
+script = ExtResource("1_twem4")
+upgrade_name = "Recycling"
+path = "Sustainable"
+wood_cost = 30
+brick_cost = 10
+metadata/_custom_type_script = "uid://cxq6bx53h1akw"
