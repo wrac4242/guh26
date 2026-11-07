@@ -12,8 +12,8 @@ var resource_type: String = "wood"
 @export var amount: int = 1
 
 func _ready() -> void:
-	floppy_disk.connect("island_changed", _on_island_changed)
-	_on_island_changed(floppy_disk.get("currentState"))
+	DiskReader.connect("island_changed", _on_island_changed)
+	_on_island_changed(DiskReader.get("currentState"))
 	
 func _on_island_changed(new_state: String) -> void:
 	match new_state:
