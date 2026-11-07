@@ -3,6 +3,8 @@ signal island_changed(new_state: String)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	island_changed.emit("Not Present")
+	_on_timer_timeout()
 	pass # Replace with function body.
 
 

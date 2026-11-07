@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dvtuun2mto3x"]
+
+[ext_resource type="Script" uid="uid://cgimvea6f8gsc" path="res://hud.gd" id="1_37p78"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1739908793]
+script = ExtResource("1_37p78")
+
+[node name="Resources" type="Label" parent="." unique_id=1895387551]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -87.0
+offset_bottom = 23.0
+grow_horizontal = 0
+text = "Foooooooo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Floppy" type="Label" parent="." unique_id=1414908033]
+offset_right = 87.0
+offset_bottom = 23.0
+text = "Foooooooo"
+horizontal_alignment = 1
+vertical_alignment = 1
