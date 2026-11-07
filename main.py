@@ -52,7 +52,7 @@ while running:
             continue 
         # ok actually mount the filesystem and read it
         try:
-            result = subprocess.run(f"timeout 10 mount /dev/{path} ./mounting", shell=True, capture_output=True, timeout=10)
+            result = subprocess.run(f"mkdir -p ./mounting && timeout 10 mount /dev/{path} ./mounting", shell=True, capture_output=True, timeout=10)
             print(result)
             assert result.returncode == 0
         except subprocess.TimeoutExpired as e:
