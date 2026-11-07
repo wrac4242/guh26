@@ -23,18 +23,18 @@ scale = Vector2(0.5, 0.5)
 [node name="Gate" parent="." unique_id=1697082703 instance=ExtResource("4_2ncn1")]
 position = Vector2(357, 333)
 scale = Vector2(4, 4)
+opens_for = "Foundry"
 
 [node name="Gate2" parent="." unique_id=2079792289 instance=ExtResource("4_2ncn1")]
 position = Vector2(-64, -64)
 rotation = 1.5707964
 scale = Vector2(4, 4)
-opens_for = "Foundry"
+opens_for = "Mountain"
 
 [node name="Gate3" parent="." unique_id=1059085131 instance=ExtResource("4_2ncn1")]
 position = Vector2(741, -208)
 rotation = 4.712389
 scale = Vector2(4, 4)
-opens_for = "Mountain"
 
 [node name="CenterSpawn" type="Marker2D" parent="." unique_id=1496327114 groups=["center_spawn"]]
 position = Vector2(305, -43)
