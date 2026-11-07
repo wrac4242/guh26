@@ -1,10 +1,14 @@
 [gd_scene format=3 uid="uid://bybjkpb5vdcg3"]
 
 [ext_resource type="PackedScene" uid="uid://boncxbjhfylr8" path="res://player.tscn" id="1_ojs25"]
+[ext_resource type="PackedScene" uid="uid://lmxej5hfeg1s" path="res://background.tscn" id="1_qwmda"]
 [ext_resource type="PackedScene" uid="uid://dsjtoxlg55msy" path="res://collectible.tscn" id="2_d5tke"]
 
 [node name="Node2D" type="Node2D" unique_id=873385274]
 position = Vector2(0, -19)
+
+[node name="Background" parent="." unique_id=1345971795 instance=ExtResource("1_qwmda")]
+position = Vector2(-2, 55)
 
 [node name="Player" parent="." unique_id=1022311804 groups=["player"] instance=ExtResource("1_ojs25")]
 position = Vector2(-2, 55)
