@@ -19,11 +19,16 @@ config/icon="res://icon.svg"
 
 WorldState="*uid://dks357gp23tk8"
 Upgrades="*uid://dhl6growf4313"
+DiskReader="*uid://s5gxrrk3gvnp"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="Neues Spiel"
 
 [input]
 
