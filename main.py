@@ -77,11 +77,13 @@ while running:
                     os.fsync(f.fileno())
             except Exception as e:
                 print(e)
-                last_valid_count = 0
-                current_state = 0
-                write_to_file()
-                time.sleep(1)
+                go_on = False
                 continue
+        if not go_on:
+            last_valid_count = 0
+            current_state = 0
+            write_to_file()
+            time.sleep(1)
         success = False
         for i in range(0, 5):
             print("unmounting")
