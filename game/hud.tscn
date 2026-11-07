@@ -32,7 +32,7 @@ offset_right = 88.0
 offset_bottom = 34.0
 grow_vertical = 2
 action_mode = 0
-text = "Rock Upgrade: 1 (10 Metal)"
+text = "Brick Upgrade: 1 (10 Metal)"
 
 [node name="WoodUpgrade" type="Button" parent="." unique_id=1283813449]
 anchors_preset = 4

@@ -40,18 +40,18 @@ func rupgrade() -> void:
 		return
 	WorldState.remove_resource("metal", 10*rock_upgrade)
 	rock_upgrade += 1
-	$RockUpgrade.text = "Rock Upgrade: %s (%s Metal)" % [ rock_upgrade, rock_upgrade * 10 ]
+	$RockUpgrade.text = "Brick Upgrade: %s (%s Metal)" % [ rock_upgrade, rock_upgrade * 10 ]
 	$RockUpgrade.show()
 
 
 func wupgrade() -> void:
-	print(WorldState.get_resource_amount("rock"))
-	if WorldState.get_resource_amount("rock") < 10*  wood_upgrade:
+	print(WorldState.get_resource_amount("brick"))
+	if WorldState.get_resource_amount("brick") < 10*  wood_upgrade:
 		return
-	WorldState.remove_resource("rock", 10*wood_upgrade)
+	WorldState.remove_resource("brick", 10*wood_upgrade)
 	wood_upgrade += 1
-	$RockUpgrade.text = "Wood Upgrade: %s (%s Rock)" % [ wood_upgrade, wood_upgrade * 10 ]
-	$RockUpgrade.show()
+	$WoodUpgrade.text = "Wood Upgrade: %s (%s Rock)" % [ wood_upgrade, wood_upgrade * 10 ]
+	$WoodUpgrade.show()
 	
 func mupgrade() -> void:
 	print(WorldState.get_resource_amount("wood"))
@@ -59,5 +59,5 @@ func mupgrade() -> void:
 		return
 	WorldState.remove_resource("wood", 10*metal_upgrade)
 	metal_upgrade += 1
-	$RockUpgrade.text = "Metal Upgrade: %s (%s Wood)" % [ metal_upgrade, metal_upgrade * 10 ]
-	$RockUpgrade.show()
+	$MetalUpgrade.text = "Metal Upgrade: %s (%s Wood)" % [ metal_upgrade, metal_upgrade * 10 ]
+	$MetalUpgrade.show()
