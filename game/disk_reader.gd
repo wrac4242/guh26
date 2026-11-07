@@ -10,12 +10,22 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
+func _handleFloppyDiskChange(state: String) -> void:
+	print(state)
+	pass
+
 var validStates = ["Not Present", "Forest", "Mountain", "Foundry"]
 var currentState = "Not Present"
 
 func _on_timer_timeout() -> void:
-	var file = FileAccess.open("C:\\Users\\laure\\FloppyTest.txt", FileAccess.READ)
+	if (!FileAccess.file_exists("FloppyTest.txt")):
+		pass
+	var file = FileAccess.open("FloppyTest.txt", FileAccess.READ)
 	var content = file.get_as_text()
-	print(content)
+	if (currentState == content):
+		pass
+	else:
+		currentState = content
+		_handleFloppyDiskChange(currentState);
 	
 	pass # Replace with function body.
