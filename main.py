@@ -90,6 +90,8 @@ while running:
             try:
                 result = subprocess.run("umount ./mounting", shell=True, capture_output=True, timeout=5)
                 print(result)
+                if "not mounted" in result.stdout:
+                    continue 
                 if result.returncode == 0:
                     success = True
                     break
