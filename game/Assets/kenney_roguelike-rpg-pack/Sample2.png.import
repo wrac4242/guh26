@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://chmcg6y7u02cm"
-path="res://.godot/imported/Sample2.png-46dcf96aed0108eb5066723f97b676aa.ctex"
+path="res://.godot/imported/Sample2.png-81f9f98e18b04c79685a9dc15eecab35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/kenney_roguelike-rpg-pack/Sample2.png"
-dest_files=["res://.godot/imported/Sample2.png-46dcf96aed0108eb5066723f97b676aa.ctex"]
+source_file="res://assets/kenney_roguelike-rpg-pack/Sample2.png"
+dest_files=["res://.godot/imported/Sample2.png-81f9f98e18b04c79685a9dc15eecab35.ctex"]
 
 [params]
 

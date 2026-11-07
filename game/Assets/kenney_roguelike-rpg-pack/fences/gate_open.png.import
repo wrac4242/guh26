@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bj3hc3dygh70w"
-path="res://.godot/imported/gate_open.png-c7d3943a861c38878fd24def21c5b150.ctex"
+path="res://.godot/imported/gate_open.png-ef1b7f6a5c617839da63ef8397a2697b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/kenney_roguelike-rpg-pack/fences/gate_open.png"
-dest_files=["res://.godot/imported/gate_open.png-c7d3943a861c38878fd24def21c5b150.ctex"]
+source_file="res://assets/kenney_roguelike-rpg-pack/fences/gate_open.png"
+dest_files=["res://.godot/imported/gate_open.png-ef1b7f6a5c617839da63ef8397a2697b.ctex"]
 
 [params]
 

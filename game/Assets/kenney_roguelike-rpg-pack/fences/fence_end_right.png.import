@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpce6yegiawbj"
-path="res://.godot/imported/fence_end_right.png-7b84d2ff8eee44cc556936b59e5ed917.ctex"
+path="res://.godot/imported/fence_end_right.png-056b006a076833557ba33d4ebefc9c39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/kenney_roguelike-rpg-pack/fences/fence_end_right.png"
-dest_files=["res://.godot/imported/fence_end_right.png-7b84d2ff8eee44cc556936b59e5ed917.ctex"]
+source_file="res://assets/kenney_roguelike-rpg-pack/fences/fence_end_right.png"
+dest_files=["res://.godot/imported/fence_end_right.png-056b006a076833557ba33d4ebefc9c39.ctex"]
 
 [params]
 
