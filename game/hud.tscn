@@ -22,3 +22,42 @@ offset_bottom = 23.0
 text = "Foooooooo"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="RockUpgrade" type="Button" parent="." unique_id=1591834967]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -34.0
+offset_right = 88.0
+offset_bottom = 34.0
+grow_vertical = 2
+action_mode = 0
+text = "Rock Upgrade: 1 (10 Metal)"
+
+[node name="WoodUpgrade" type="Button" parent="." unique_id=1283813449]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = 40.0
+offset_right = 89.0
+offset_bottom = 108.0
+grow_vertical = 2
+action_mode = 0
+text = "Wood Upgrade (10 Rock)"
+
+[node name="MetalUpgrade" type="Button" parent="." unique_id=1713072678]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 1.0
+offset_top = -104.0
+offset_right = 89.0
+offset_bottom = -36.0
+grow_vertical = 2
+action_mode = 0
+text = "Metal Upgrade: 1 (10 wood)"
+
+[connection signal="pressed" from="RockUpgrade" to="." method="rupgrade"]
+[connection signal="pressed" from="WoodUpgrade" to="." method="wupgrade"]
+[connection signal="pressed" from="MetalUpgrade" to="." method="mupgrade"]
