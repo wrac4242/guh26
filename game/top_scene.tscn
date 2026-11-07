@@ -31,3 +31,6 @@ scale = Vector2(4, 4)
 position = Vector2(741, -208)
 rotation = 4.712389
 scale = Vector2(4, 4)
+
+[node name="CenterSpawn" type="Marker2D" parent="." unique_id=1496327114 groups=["center_spawn"]]
+position = Vector2(305, -43)
