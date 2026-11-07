@@ -25,6 +25,8 @@ def write_to_file():
 # dont auto check within x cycles since - if its still detected from ejection
 last_valid_count = 0
 
+write_to_file()
+
 while running:
     time.sleep(0.5)
     
