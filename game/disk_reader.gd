@@ -19,7 +19,7 @@ var currentState = "Not Present"
 
 func _on_timer_timeout() -> void:
 	if (!FileAccess.file_exists("FloppyTest.txt")):
-		pass
+		return
 	var file = FileAccess.open("FloppyTest.txt", FileAccess.READ)
 	var content = file.get_as_text()
 	if (currentState == content):
